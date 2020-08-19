@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="parusapp.Views.ContactsPage"
+			 Title="Южный Парус">
+	<ContentPage.Content>
+		<StackLayout Padding="10">
+			<Label Text="Телефоны:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5"/>
+			  <Label Text=" +7 (861) 217-70-07 &#10; +7 (861) 262-77-77 &#10; +7 (861) 255-43-55 &#10; +7 (861) 259-20-20 &#10; +7 (967) 307-20-20 &#10; +7 (967) 305-20-20 &#10; +7 (861) 255-43-33" 
+				         HorizontalOptions="Start"  Margin="20, 0"/>
+			<Label Text="Горячая линия:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5" />
+			  <Label Text="Добавочный номер – 130" HorizontalOptions="Start" Margin="20, 0" />
+			<Label Text="Адрес:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5" />
+			  <Label Text="350000, г. Краснодар, ул. Рашпилевская, 55, оф.40" HorizontalOptions="Start" Margin="20, 0"/>
+			<Label Text="SIP ID:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5" />
+			  <Label Text="0042578356" HorizontalOptions="Start" Margin="20, 0" />	
+			<Label Text="Web-сайт:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5" />
+			  <Label Text="https://www.parusyug.ru" HorizontalOptions="Start" Margin="20, 0" />
+			<Label Text="Информационный портал:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5" />
+			  <Label Text="http://info.parusyug.ru" HorizontalOptions="Start" Margin="20, 0" />
+			<Label Text="E-mail:" HorizontalOptions="Start" FontSize="Large" Margin="10, 5" />
+			  <Label Text="parus@parusyug.ru" HorizontalOptions="Start" Margin="20, 0" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
