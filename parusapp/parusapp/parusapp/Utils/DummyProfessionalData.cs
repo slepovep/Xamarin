@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using parusapp.Models;
 
 namespace parusapp.Utils
-{
+{    
     public static class DummyProfessionalData
     {
+        //построение Grida сделать из БД локальной
         public static List<Professional> GetProfessionals()
         {
             var data = new List<Professional>();
