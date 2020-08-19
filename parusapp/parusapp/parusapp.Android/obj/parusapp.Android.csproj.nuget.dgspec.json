@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj": {}
+    "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj": {
+    "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj",
+        "projectUniqueName": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj",
         "projectName": "parusapp.Android",
-        "projectPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj",
+        "projectPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj",
         "packagesPath": "C:\\Users\\sleugen\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.Android\\obj\\",
+        "outputPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj": {
-                "projectPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj"
+              "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj": {
+                "projectPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj": {
+    "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
+        "projectUniqueName": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
         "projectName": "parusapp",
-        "projectPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
+        "projectPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
         "packagesPath": "C:\\Users\\sleugen\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\obj\\",
+        "outputPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
