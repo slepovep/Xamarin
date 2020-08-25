@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A8VckC0/gjequATSfF/YHNDDD12NIsvs5JbF8f1PiRSCy1upgZ+Gf0tKJTUT59RVY362lL9NcDgj/XRbUC/37w==",
+  "dgSpecHash": "Dkjl3+OaZ/TB5NPjT1izyPgKY0rBYi2XRSZR29/1/+sEAjtFB7JdhcI9Qa5+z1UUfjgTN+BRmeoM15c7a60ZPw==",
   "success": true,
-  "projectFilePath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
+  "projectFilePath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sleugen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\sleugen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

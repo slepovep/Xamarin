@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b2SNOKHXQnoznewV5LqPVlXMmdKxZ4YSos2LUTBXVDvW+XYETt1dxHVGA3sdQG5cahrcXP/MT17DwUO9Sx6PMQ==",
+  "dgSpecHash": "Gp0sgaeXBqaLcdzJr3WhPkDzq6UgZD9ip/CjOCTlIShJvacuvizODtj511sfNp4bZPD4weT36POwKHR6nEhnHw==",
   "success": true,
-  "projectFilePath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj",
+  "projectFilePath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.Android\\parusapp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sleugen\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\sleugen\\.nuget\\packages\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
