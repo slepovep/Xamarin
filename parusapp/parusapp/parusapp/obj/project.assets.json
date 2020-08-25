@@ -635,11 +635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
+      "projectUniqueName": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
       "projectName": "parusapp",
-      "projectPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
+      "projectPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj",
       "packagesPath": "C:\\Users\\sleugen\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\obj\\",
+      "outputPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1115,11 +1115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.iOS\\parusapp.iOS.csproj",
+      "projectUniqueName": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.iOS\\parusapp.iOS.csproj",
       "projectName": "parusapp.iOS",
-      "projectPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.iOS\\parusapp.iOS.csproj",
+      "projectPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.iOS\\parusapp.iOS.csproj",
       "packagesPath": "C:\\Users\\sleugen\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp.iOS\\obj\\",
+      "outputPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1140,8 +1140,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj": {
-              "projectPath": "D:\\Git\\Xamarin\\parusapp\\parusapp\\parusapp\\parusapp.csproj"
+            "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj": {
+              "projectPath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp\\parusapp.csproj"
             }
           }
         }
