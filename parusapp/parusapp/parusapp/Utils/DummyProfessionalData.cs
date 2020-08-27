@@ -33,14 +33,11 @@ namespace parusapp.Utils
                 Domain = "Desktop",
                 Experience = "2"
             };
+           
+            data.Add(person1);
+            data.Add(person2);
+            data.Add(person3);
 
-
-            for (int i = 0; i < 10; i++)
-            {
-                data.Add(person1);
-                data.Add(person2);
-                data.Add(person3);
-            }
             return data;
         }
     }

@@ -477,3 +477,11 @@ D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\andr
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\compressed_assemblies.x86.o
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\compressed_assemblies.x86_64.o
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\Xamarin.Forms.DataGrid.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\SQLite-net.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\SQLitePCLRaw.core.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\System.Buffers.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\System.Memory.dll
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll

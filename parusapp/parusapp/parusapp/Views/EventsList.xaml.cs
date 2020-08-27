@@ -19,6 +19,11 @@ namespace parusapp.Views
             InitializeComponent();
             BindingContext = new MainPageViewModel();
         }
+        protected override void OnAppearing()
+        {
+            eventsList.ItemsSource = App.Database.GetItems();
+            base.OnAppearing();
+        }
     }
 }
 

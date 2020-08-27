@@ -7,8 +7,6 @@ D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\parusapp.AssemblyInfoInputs.cache
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\parusapp.AssemblyInfo.cs
-D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\parusapp.csproj.CoreCompileInputs.cache
-D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\parusapp.dll
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\ref\parusapp.dll
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\parusapp.pdb
@@ -16,3 +14,5 @@ D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\Views\MasterPage.xaml.g.cs
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\Views\ReminderPage.xaml.g.cs
 D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\Views\EventsList.xaml.g.cs
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\parusapp.csproj.CoreCompileInputs.cache
+D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp\obj\Debug\netstandard2.0\XamlC.stamp

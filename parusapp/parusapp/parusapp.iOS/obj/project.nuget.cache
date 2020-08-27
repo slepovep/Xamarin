@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "x2C6A+f6Cgyqz+RWy536eNJSrg1rz2jWO9CX3x5XQ01araYUk80wLepWS+7rIaodW0wjJadSqeT8wK2zSNlDMg==",
+  "dgSpecHash": "p0utR0I8nunGva7PWJ3trQ0cEhFBpS7fsjXONvPAY0TFEXNZ7TdwqcuLxk3bm4bBdKuSI3D0oYrMh+jtOEqBiw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Mobile\\parusapp\\parusapp\\parusapp\\parusapp.iOS\\parusapp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sleugen\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\sleugen\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\sleugen\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\sleugen\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\sleugen\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\sleugen\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\sleugen\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\sleugen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\sleugen\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Users\\sleugen\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512",
     "C:\\Users\\sleugen\\.nuget\\packages\\xamarin.forms.datagrid\\3.1.0\\xamarin.forms.datagrid.3.1.0.nupkg.sha512"
