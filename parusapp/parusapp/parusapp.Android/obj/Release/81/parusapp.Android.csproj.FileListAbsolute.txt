@@ -1,3 +1,0 @@
-D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Release\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
-D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Release\81\build.props
-D:\Projects\Mobile\parusapp\parusapp\parusapp\parusapp.Android\obj\Release\81\adb.props
