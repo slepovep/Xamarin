@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using parusapp.MasterDetailPageNavigation;
+using parusapp.Services;
 
 namespace parusapp.Views
 {
@@ -24,6 +25,23 @@ namespace parusapp.Views
             eventsList.ItemsSource = App.Database.GetItems();
             base.OnAppearing();
         }
+        // обработка нажатия элемента в списке
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Event selectedEvent = (Event)e.SelectedItem;
+            EventPage eventPage = new EventPage();
+            eventPage.BindingContext = selectedEvent;
+            await Navigation.PushAsync(eventPage);
+        }
+        // обработка нажатия кнопки добавления
+        private async void CreateFriend(object sender, EventArgs e)
+        {
+            Event friend = new Event();
+            EventPage friendPage = new EventPage();
+            friendPage.BindingContext = friend;
+            await Navigation.PushAsync(friendPage);
+        }
+
     }
 }
 

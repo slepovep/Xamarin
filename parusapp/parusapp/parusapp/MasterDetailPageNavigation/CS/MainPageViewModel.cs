@@ -78,37 +78,6 @@ namespace parusapp.MasterDetailPageNavigation
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
-        //-------------
-        protected override void OnAppearing()
-        {
-            eventsList.ItemsSource = App.Database.GetItems();
-            base.OnAppearing();
-        }
-        // обработка нажатия элемента в списке
-        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            Event selectedEvent = (Event)e.SelectedItem;
-            EventPage eventPage = new EventPage();
-            eventPage.BindingContext = selectedEvent;
-            await Navigation.PushAsync(eventPage);
-        }
-        // обработка нажатия кнопки добавления
-        private async void CreateEvent(object sender, EventArgs e)
-        {
-            Event event = new Event();
-            EventPage eventPage = new EventPage();
-            eventPage.BindingContext = event;
-            await Navigation.PushAsync(eventPage);
-        }
-
-
-        //-------------
-
-
-
-
-
-
 
     }
 }
