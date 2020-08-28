@@ -10,8 +10,8 @@
 		<Label Text="Телефон" />
 		<Entry Text="{Binding Phone}" />
 		<StackLayout Orientation="Horizontal">
-			<Button Text="Сохранить" Clicked="SaveFriend" />
-			<Button Text="Удалить" Clicked="DeleteFriend" />
+			<Button Text="Сохранить" Clicked="SaveEvent" />
+			<Button Text="Удалить" Clicked="DeleteEvent" />
 			<Button Text="Отмена" Clicked="Cancel" />
 		</StackLayout>
 	</StackLayout>

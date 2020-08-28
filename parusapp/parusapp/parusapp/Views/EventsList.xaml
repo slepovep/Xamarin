@@ -9,7 +9,7 @@
 	<StackLayout>
 		<ContentView>
 			<!-- Place new controls here -->
-			<dg:DataGrid x:Name="eventsList" ItemsSource="{Binding Professionals}" SelectionEnabled="True" SelectedItem="{Binding SelectedProfesstional}" RowHeight="70" HeaderHeight="50"  
+			<dg:DataGrid x:Name="eventsList" ItemsSource="{Binding}" SelectionEnabled="True" ItemSelected="OnItemSelected"  RowHeight="70" HeaderHeight="50"  
                     BorderColor="#CCCCCC" HeaderBackground="#E0E6F8" PullToRefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" ActiveRowColor="#8899AA">
 				<x:Arguments>
 					<ListViewCachingStrategy>RetainElement</ListViewCachingStrategy>
@@ -22,16 +22,15 @@
 				</dg:DataGrid.HeaderFontSize>
 				<dg:DataGrid.Columns>
 					<dg:DataGridColumn Title="ID" PropertyName="Id" Width="1*"></dg:DataGridColumn>
-					<dg:DataGridColumn PropertyName="Name" Width="2*">
+					<dg:DataGridColumn Title="Name" PropertyName="Name" Width="2*">
 						<dg:DataGridColumn.FormattedTitle>
 							<FormattedString>
 								<Span Text="Name" FontSize="13" TextColor="Black" FontAttributes="Bold"/>
 							</FormattedString>
 						</dg:DataGridColumn.FormattedTitle>
 					</dg:DataGridColumn>
-					<dg:DataGridColumn Title="Desigination" PropertyName="Desigination" Width="2*"/>
-					<dg:DataGridColumn Title="Domain" PropertyName="Domain" Width="2*"/>
-					<dg:DataGridColumn Title="Exp" PropertyName="Experience" Width="1*"/>
+					<dg:DataGridColumn Title="Email" PropertyName="Email" Width="2*"/>
+					<dg:DataGridColumn Title="Phone" PropertyName="Phone" Width="2*"/>
 				</dg:DataGrid.Columns>
 				<dg:DataGrid.RowsBackgroundColorPalette>
 					<dg:PaletteCollection>
