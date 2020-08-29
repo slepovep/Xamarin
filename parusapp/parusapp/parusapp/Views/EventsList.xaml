@@ -21,16 +21,11 @@
 					</OnIdiom>
 				</dg:DataGrid.HeaderFontSize>
 				<dg:DataGrid.Columns>
-					<dg:DataGridColumn Title="ID" PropertyName="Id" Width="1*"></dg:DataGridColumn>
-					<dg:DataGridColumn Title="Name" PropertyName="Name" Width="2*">
-						<dg:DataGridColumn.FormattedTitle>
-							<FormattedString>
-								<Span Text="Name" FontSize="13" TextColor="Black" FontAttributes="Bold"/>
-							</FormattedString>
-						</dg:DataGridColumn.FormattedTitle>
-					</dg:DataGridColumn>
-					<dg:DataGridColumn Title="Email" PropertyName="Email" Width="2*"/>
-					<dg:DataGridColumn Title="Phone" PropertyName="Phone" Width="2*"/>
+					<dg:DataGridColumn Title="№ События" PropertyName="Event_numb" Width="2*"></dg:DataGridColumn>
+					<dg:DataGridColumn Title="Статус" PropertyName="Event_stat" Width="2*">	</dg:DataGridColumn>
+					<dg:DataGridColumn Title="Дата регистрации" PropertyName="Reg_date" Width="2*"/>
+					<dg:DataGridColumn Title="Дата изменения" PropertyName="Change_date" Width="2*"/>
+					<dg:DataGridColumn Title="Описание" PropertyName="Event_descr" Width="4*"/>
 				</dg:DataGrid.Columns>
 				<dg:DataGrid.RowsBackgroundColorPalette>
 					<dg:PaletteCollection>

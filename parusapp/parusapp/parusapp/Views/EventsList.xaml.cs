@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Windows.Input;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using parusapp.MasterDetailPageNavigation;
-using parusapp.Services;
+using parusapp.Models;
 
 namespace parusapp.Views
 {
@@ -36,10 +32,10 @@ namespace parusapp.Views
         // обработка нажатия кнопки добавления
         private async void CreateEvent(object sender, EventArgs e)
         {
-            Event friend = new Event();
-            EventPage friendPage = new EventPage();
-            friendPage.BindingContext = friend;
-            await Navigation.PushAsync(friendPage);
+            Event eventrec = new Event();
+            EventPage eventPage = new EventPage();
+            eventPage.BindingContext = eventrec;
+            await Navigation.PushAsync(eventPage);
 
             this.RefreshEventsList();
         }

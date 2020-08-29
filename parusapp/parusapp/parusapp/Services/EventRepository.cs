@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using SQLite;
+using parusapp.Models;
 
 namespace parusapp.Services
 {
@@ -13,7 +14,8 @@ namespace parusapp.Services
         }
         public IEnumerable<Event> GetItems()
         {
-            return database.Table<Event>().ToList();
+            var Item1 = database.Table<Event>().ToList();
+            return Item1;
         }
         public Event GetItem(int id)
         {
