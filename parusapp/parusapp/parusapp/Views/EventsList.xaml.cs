@@ -33,11 +33,11 @@ namespace parusapp.Views
         private async void CreateEvent(object sender, EventArgs e)
         {
             Event eventrec = new Event();
-            EventPage eventPage = new EventPage();
+            EventAdd eventPage = new EventAdd();
             eventPage.BindingContext = eventrec;
             await Navigation.PushAsync(eventPage);
 
-            this.RefreshEventsList();
+          //  this.RefreshEventsList();
         }
         //обновление страницы событий
         public ICommand RefreshCommand { get; set; }

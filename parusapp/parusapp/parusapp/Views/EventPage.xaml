@@ -6,8 +6,8 @@
 		<Label Text="Описание" />
 		<Entry Text="{Binding Event_descr}" />
 		<StackLayout Orientation="Horizontal">
-			<Button Text="Сохранить" Clicked="SaveEvent" />
-			<Button Text="Удалить" Clicked="DeleteEvent" />
+			<Button Text="Добавить комментарий" Clicked="EventComment" />
+			<Button Text="Удалить событие" Clicked="DeleteEvent" />
 			<Button Text="Отмена" Clicked="Cancel" />
 		</StackLayout>
 	</StackLayout>
