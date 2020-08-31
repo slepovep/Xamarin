@@ -4,6 +4,7 @@
              x:Class="parusapp.Views.EventAdd" Title="Добавить событие">
 	<StackLayout>
 		<Label Text="Описание" />
+		<Entry Text="{Binding Event_descr}" />
 		<StackLayout Orientation="Horizontal">
 			<Button Text="Добавить событие" Clicked="SaveEvent" />
 		</StackLayout>

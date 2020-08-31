@@ -39,7 +39,7 @@
     <EmbeddedResource Update="Views\ReminderPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EventsList.xaml">
+    <EmbeddedResource Update="Views\EventsListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -48,8 +48,8 @@
     <Compile Update="Views\EventAdd.xaml.cs">
       <DependentUpon>EventAdd.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\EventsList.xaml.cs">
-      <DependentUpon>EventsList.xaml</DependentUpon>
+    <Compile Update="Views\EventsListPage.xaml.cs">
+      <DependentUpon>EventsListPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\EventPage.xaml.cs">
       <DependentUpon>EventPage.xaml</DependentUpon>

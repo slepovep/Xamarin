@@ -12,14 +12,19 @@ namespace parusapp.Views
     [DesignTimeVisible(false)]
     public partial class EventsListPage : ContentPage
     {
+        bool loaded = false;
         public EventsListPage()
         {
             InitializeComponent();
         }
         protected override void OnAppearing()
         {
-            eventsList.ItemsSource = App.Database.GetItems();
-            base.OnAppearing();
+            if (loaded == false) {
+                eventsList.ItemsSource = App.Database.GetItems();
+                base.OnAppearing();
+                loaded = true;
+            }
+            else this.RefreshEventsList();
         }
         // обработка нажатия элемента в списке
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -37,7 +42,7 @@ namespace parusapp.Views
             eventPage.BindingContext = eventrec;
             await Navigation.PushAsync(eventPage);
 
-          //  this.RefreshEventsList();
+            this.RefreshEventsList();
         }
         //обновление страницы событий
         public ICommand RefreshCommand { get; set; }
