@@ -11,9 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ViewModels\**" />
-    <EmbeddedResource Remove="ViewModels\**" />
-    <None Remove="ViewModels\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>

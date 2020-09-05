@@ -16,19 +16,19 @@ namespace parusapp.MasterDetailPageNavigation
             {
                 Title = "Contacts",
                 IconSource = "contacts.png",
-                TargetType = typeof(ContactsPageCS)
+                //TargetType = typeof(ContactsPageCS)
             });
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "TodoList",
                 IconSource = "todo.png",
-                TargetType = typeof(EventsListPageCS)
+                //TargetType = typeof(EventsListPageCS)
             });
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Reminders",
                 IconSource = "reminders.png",
-                TargetType = typeof(ReminderPageCS)
+                //TargetType = typeof(ReminderPageCS)
             });
 
             listView = new ListView

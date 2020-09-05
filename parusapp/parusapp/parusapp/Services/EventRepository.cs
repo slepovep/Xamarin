@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using SQLite;
 using parusapp.Models;
 
@@ -14,8 +15,18 @@ namespace parusapp.Services
         }
         public IEnumerable<Event> GetItems()
         {
-            var Item1 = database.Table<Event>().ToList();
-            return Item1;
+            //var Item1 = database.Table<Event>().ToList();
+
+            //var List = new ObservableCollection<Event>(database.Table<Event>().ToList());
+
+            var EventsList = new ObservableCollection<Event>(database.Table<Event>().ToList());
+
+            var EventsCollection = new ObservableCollection<Event>();
+
+            foreach (var Event in EventsList) {
+                EventsCollection.Add(Event); //This is important
+            }
+            return EventsCollection;
         }
         public Event GetItem(int id)
         {
@@ -35,5 +46,6 @@ namespace parusapp.Services
                 return database.Insert(item);
             }
         }
+
     }
 }

@@ -4,12 +4,12 @@ using System.IO;
 using Xamarin.Forms.Xaml;
 using parusapp.Services;
 using parusapp.Views;
-using parusapp.MasterDetailPageNavigation;
 
 namespace parusapp
 {
 	public partial class App : Application
 	{
+        public static string User = "Rendy";
         public const string DATABASE_NAME = "Events.db";
         public static EventRepository database;
         public static EventRepository Database {

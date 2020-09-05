@@ -30,7 +30,7 @@ namespace parusapp.Views
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Event selectedEvent = (Event)e.SelectedItem;
-            EventPage eventPage = new EventPage();
+            ChatPage eventPage = new ChatPage();
             eventPage.BindingContext = selectedEvent;
             await Navigation.PushAsync(eventPage);
         }
@@ -38,19 +38,21 @@ namespace parusapp.Views
         private async void CreateEvent(object sender, EventArgs e)
         {
             Event eventrec = new Event();
-            EventAdd eventPage = new EventAdd();
-            eventPage.BindingContext = eventrec;
-            await Navigation.PushAsync(eventPage);
+            EventAdd eventAdd = new EventAdd();
+            eventAdd.BindingContext = eventrec;
+            await Navigation.PushAsync(eventAdd);
 
             this.RefreshEventsList();
         }
         //обновление страницы событий
         public ICommand RefreshCommand { get; set; }
-        private async void RefreshEventsList()
+        public async void RefreshEventsList()
         {
-            eventsList.IsRefreshing = true;
-            await Task.Delay(3000);
-            eventsList.IsRefreshing = false;
+            //eventsList.IsRefreshing = true;
+            await Task.Delay(1000);
+            //eventsList.ItemsSource = App.Database.GetItems();
+            
+            //eventsList.IsRefreshing = false;
         }
 
     }

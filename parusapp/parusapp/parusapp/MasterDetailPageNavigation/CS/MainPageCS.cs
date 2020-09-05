@@ -12,7 +12,7 @@ namespace parusapp.MasterDetailPageNavigation
         {
             masterPage = new MasterPageCS();
             Master = masterPage;
-            Detail = new NavigationPage(new ContactsPageCS());
+            //Detail = new NavigationPage(new ContactsPageCS());
 
             masterPage.ListView.ItemSelected += OnItemSelected;
 
