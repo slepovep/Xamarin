@@ -36,5 +36,6 @@
 			</dg:DataGrid>
 		</ContentView>
 		<Button Text="Добавить" Clicked="CreateEvent" />
+		<Button Text="Удалить" Clicked="DeleteEvent" />
     </StackLayout>
 </ContentPage>  	

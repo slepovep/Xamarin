@@ -44,15 +44,22 @@ namespace parusapp.Views
 
             this.RefreshEventsList();
         }
+
+        // обработка нажатия кнопки удаления
+        private async void DeleteEvent(object sender, EventArgs e)
+        {
+            App.Database.MaxRecord();
+            this.RefreshEventsList();
+        }
+
         //обновление страницы событий
         public ICommand RefreshCommand { get; set; }
         public async void RefreshEventsList()
         {
-            //eventsList.IsRefreshing = true;
+            eventsList.IsRefreshing = true;
             await Task.Delay(1000);
-            //eventsList.ItemsSource = App.Database.GetItems();
-            
-            //eventsList.IsRefreshing = false;
+            eventsList.ItemsSource = App.Database.GetItems();
+            eventsList.IsRefreshing = false;
         }
 
     }
