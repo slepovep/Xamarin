@@ -13,34 +13,35 @@ namespace parusapp.Views
         {
             InitializeComponent();
             this.BindingContext = new ChatPageViewModel();
+
         }
 
         public void ScrollTap(object sender, System.EventArgs e)
         {
-            lock (new object())
-            {
-                if (BindingContext != null)
-                {
-                    var vm = BindingContext as ChatPageViewModel;
+            //lock (new object())
+            //{
+            //    if (bindingcontext != null)
+            //    {
+            //        var vm = bindingcontext as chatpageviewmodel;
 
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        while (vm.DelayedMessages.Count > 0)
-                        {
-                            vm.Messages.Insert(0, vm.DelayedMessages.Dequeue());
-                        }
-                        vm.ShowScrollTap = false;
-                        vm.LastMessageVisible = true;
-                        vm.PendingMessageCount = 0;
-                        ChatList?.ScrollToFirst();
-                    });
+            //        device.begininvokeonmainthread(() =>
+            //        {
+            //            while (vm.delayedmessages.count > 0)
+            //            {
+            //                vm.messages.insert(0, vm.delayedmessages.dequeue());
+            //            }
+            //            vm.showscrolltap = false;
+            //            vm.lastmessagevisible = true;
+            //            vm.pendingmessagecount = 0;
+            //            chatlist?.scrolltofirst();
+            //        });
 
 
-                }
+            //    }
 
-            }
+            //}
         }
-       
+
         public void OnListTapped(object sender, ItemTappedEventArgs e)
         {
             chatInput.UnFocusEntry();

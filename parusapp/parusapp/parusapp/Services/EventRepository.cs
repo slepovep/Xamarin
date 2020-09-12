@@ -14,15 +14,15 @@ namespace parusapp.Services
             database = new SQLiteConnection(databasePath);
             database.CreateTable<Event>();
         }
-        public IEnumerable<EventView> GetItems()
+        public IEnumerable<Event> GetItems()
         {
             //var List = new ObservableCollection<Event>(database.Table<Event>().ToList()); 
             //var EventsList = new ObservableCollection<Event>(database.Table<Event>().ToList());
             //var EventsListView = new ObservableCollection<EventView>(database.Table<EventView>().ToList());
 
-            var EventsList = database.Table<Event>().ToList();
-            var EventsCollection = new ObservableCollection<EventView>();
-            
+            //var EventsList = database.Table<Event>().ToList();
+            //var EventsCollection = new ObservableCollection<EventView>();
+            /*
             foreach (var Event in EventsList) {
                 EventView eventview = new EventView(); 
                 eventview.Id = Event.Id;
@@ -39,16 +39,16 @@ namespace parusapp.Services
                 EventsCollection.Add(eventview);
             }
             return EventsCollection;
-
-            /*
-             old code
+            */
+            
+             //old code
             var EventsList = new ObservableCollection<Event>(database.Table<Event>().ToList());
             var EventsCollection = new ObservableCollection<Event>();
             foreach (var Event in EventsList) {
                 EventsCollection.Add(Event); //This is important
             }
             return EventsCollection;
-             */
+             
         }
         public Event GetItem(int id)
         {

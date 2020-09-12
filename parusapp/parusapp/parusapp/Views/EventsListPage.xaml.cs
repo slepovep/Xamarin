@@ -13,26 +13,32 @@ namespace parusapp.Views
     public partial class EventsListPage : ContentPage
     {
         bool loaded = false;
+        private bool _isRefreshing;
         public EventsListPage()
         {
             InitializeComponent();
         }
         protected override void OnAppearing()
         {
-            if (loaded == false) {
+            //if (loaded == false) {
                 eventsList.ItemsSource = App.Database.GetItems();
                 base.OnAppearing();
                 loaded = true;
-            }
-            else this.RefreshEventsList();
+            //}
+            //else this.RefreshEventsList();
         }
         // обработка нажатия элемента в списке
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Event selectedEvent = (Event)e.SelectedItem;
-            ChatPage eventPage = new ChatPage();
-            eventPage.BindingContext = selectedEvent;
-            await Navigation.PushAsync(eventPage);
+           Event selectedEvent = (Event)e.SelectedItem;
+
+            if (selectedEvent != null) {
+                eventsList.SelectedItem = null; // Снимаем выделение
+                ChatPage eventPage = new ChatPage();
+                //eventPage.BindingContext = selectedEvent;
+                await Navigation.PushAsync(eventPage);
+
+            }
         }
         // обработка нажатия кнопки добавления
         private async void CreateEvent(object sender, EventArgs e)
@@ -60,6 +66,17 @@ namespace parusapp.Views
             await Task.Delay(1000);
             eventsList.ItemsSource = App.Database.GetItems();
             eventsList.IsRefreshing = false;
+        }
+
+
+        public bool IsRefreshing {
+            get {
+                return _isRefreshing;
+            }
+            set {
+                _isRefreshing = value;
+                OnPropertyChanged(nameof(IsRefreshing));
+            }
         }
 
     }
