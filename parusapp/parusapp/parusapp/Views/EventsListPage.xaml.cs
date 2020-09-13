@@ -22,8 +22,12 @@ namespace parusapp.Views
         {
             //if (loaded == false) {
                 eventsList.ItemsSource = App.Database.GetItems();
+                eventsList.PullToRefreshCommand = new Command(RefreshEventsList);  //обновление страницы жестом сверху-вниз по экрану
                 base.OnAppearing();
                 loaded = true;
+
+                //RefreshCommand = new Command(RefreshEventsList);
+            
             //}
             //else this.RefreshEventsList();
         }
