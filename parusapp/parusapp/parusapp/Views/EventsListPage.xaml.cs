@@ -38,10 +38,9 @@ namespace parusapp.Views
 
             if (selectedEvent != null) {
                 eventsList.SelectedItem = null; // Снимаем выделение
-                ChatPage eventPage = new ChatPage();
-                //eventPage.BindingContext = selectedEvent;
-                await Navigation.PushAsync(eventPage);
-
+                ChatPage chatPage = new ChatPage();
+                //chatPage.BindingContext = selectedEvent.Id;
+                await Navigation.PushAsync(chatPage);
             }
         }
         // обработка нажатия кнопки добавления
