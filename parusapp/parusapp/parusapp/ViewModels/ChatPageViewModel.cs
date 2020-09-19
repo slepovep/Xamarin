@@ -24,18 +24,18 @@ namespace parusapp.ViewModels
         public ICommand MessageAppearingCommand { get; set; }
         public ICommand MessageDisappearingCommand { get; set; }
 
-        public ChatPageViewModel()
+        public ChatPageViewModel(int Event_id)
         {
             //var database = App.database;
-            App.Database.DeleteComments();
+            //App.Database.DeleteComments();
 
-            Comment commentrec = new Comment();
-            commentrec.Event_id = 1;
-            commentrec.Comment_text = "IN_COMMENT";
-            commentrec.User = "User1";
-            App.Database.SaveCommentItem(commentrec);
+            //Comment commentrec = new Comment();
+            //commentrec.Event_id = Event_id;
+            //commentrec.Comment_text = "IN_COMMENT";
+            //commentrec.User = "User1";
+            //App.Database.SaveCommentItem(commentrec);
 
-            var CommentsList = App.Database.GetCommentItems(1);
+            var CommentsList = App.Database.GetCommentItems(Event_id);
 
             //database = new SQLiteConnection(databasePath);
             //database.CreateTable<Comment>();
@@ -75,21 +75,33 @@ namespace parusapp.ViewModels
 
             OnSendCommand = new Command(() =>
             {
-                if(!string.IsNullOrEmpty(TextToSend)){
-                    Messages.Insert(0, new Message() { Text = TextToSend, User = App.User });
-                    //запись в базу
-                    //Comment commentrec = new Comment();
-                    commentrec.Event_id = 1;
-                    commentrec.Comment_text = TextToSend;
-                    commentrec.User = App.User;
-                    App.Database.SaveCommentItem(commentrec);
+            if (!string.IsNullOrEmpty(TextToSend)) {
+                 //запись в базу
+                 Comment commentrec = new Comment();
+                 commentrec.Event_id = Event_id;
+                 commentrec.Comment_text = TextToSend;
+                 //симуляция получения ответа   
+                 if (commentrec.Comment_text.Substring(0,1) == "!") 
+                 { 
+                     commentrec.User = "User1"; 
+                     commentrec.Comment_text = TextToSend.Substring(1);
+                 }
+                 else 
+                 { 
+                     commentrec.User = App.User;
+                     
+                 }
+                 App.Database.SaveCommentItem(commentrec);
 
-                    TextToSend = string.Empty;
-
-
-
+                 Messages.Insert(0, new Message() { Text = commentrec.Comment_text, User = commentrec.User });
+                 TextToSend = string.Empty;
+                 TextToSend = null;
                 }
-               
+
+                if (PropertyChanged != null) {
+                    PropertyChanged(this, new PropertyChangedEventArgs("TextToSend"));
+                }
+
             });
 
             //Code to simulate reveing a new message procces

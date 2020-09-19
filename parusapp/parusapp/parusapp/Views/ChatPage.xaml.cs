@@ -9,10 +9,10 @@ namespace parusapp.Views
 {
     public partial class ChatPage : ContentPage
     {
-        public ChatPage()
+        public ChatPage(int Event_id)
         {
             InitializeComponent();
-            this.BindingContext = new ChatPageViewModel();
+            this.BindingContext = new ChatPageViewModel(Event_id);
 
         }
 
