@@ -12,6 +12,7 @@ namespace parusapp.Models
         public string Comment_text { get; set; }
         public int InOut_comment { get; set; }
         public string User { get; set; }
+        public DateTime? Reg_date { get; set; }
 
     }
 }

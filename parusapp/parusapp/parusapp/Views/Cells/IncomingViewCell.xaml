@@ -5,9 +5,13 @@
        <Frame BackgroundColor="LightBlue"
               Rotation="180"
               FlowDirection="LeftToRight"
-              Padding="10"
+              Padding="10,2,10,2"
               HasShadow="false"
               Margin="10,10,80,10">
-           <Label Text="{Binding Text}"/>
-        </Frame>
+		 <StackLayout>
+			<Label Text="{Binding User}" HorizontalOptions="End" VerticalOptions="EndAndExpand" FontAttributes="Italic" FontSize= "Micro" TextColor="#ffffb3"/>
+		    <Label Text="{Binding Text}"/>
+			<Label Text="{Binding Reg_date}" HorizontalOptions="End" VerticalOptions="EndAndExpand" FontAttributes="Italic" FontSize= "Micro" TextColor="#ffffb3"/>
+		</StackLayout>
+	   </Frame>
 </ViewCell>

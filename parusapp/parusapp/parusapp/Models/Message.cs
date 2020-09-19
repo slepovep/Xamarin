@@ -5,5 +5,6 @@ namespace parusapp.Models
     {
         public string Text { get; set; }
         public string User { get; set; }
+        public string Reg_date { get; set; }
     }
 }
