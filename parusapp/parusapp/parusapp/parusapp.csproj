@@ -32,6 +32,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\NewsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\ContactsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -53,6 +56,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\NewsPage.xaml.cs">
+      <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\EventAdd.xaml.cs">
       <DependentUpon>EventAdd.xaml</DependentUpon>
     </Compile>

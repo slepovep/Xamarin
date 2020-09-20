@@ -14,6 +14,7 @@
 					<local:MasterPageItem Title="Личный кабинет" IconSource="reminders.png" TargetType="{x:Type pages:ReminderPage}" />
 					<local:MasterPageItem Title="Журнал событий" IconSource="todo.png" TargetType="{x:Type pages:EventsListPage}" />
 					<local:MasterPageItem Title="Журнал обращений" IconSource="reminders.png" TargetType="{x:Type pages:ReminderPage}" />
+					<local:MasterPageItem Title="Новости" IconSource="contacts.png" TargetType="{x:Type pages:NewsPage}" />
 					<local:MasterPageItem Title="Контакты" IconSource="contacts.png" TargetType="{x:Type pages:ContactsPage}" />
 				</x:Array>
             </ListView.ItemsSource>
