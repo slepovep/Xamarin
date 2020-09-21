@@ -18,10 +18,11 @@ namespace parusapp.Views
         {
             InitializeComponent();
         }
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             //if (loaded == false) {
-                eventsList.ItemsSource = App.Database.GetItems();
+                await App.Database.CreateTable();
+                eventsList.ItemsSource = await App.Database.GetItems();
                 eventsList.PullToRefreshCommand = new Command(RefreshEventsList);  //обновление страницы жестом сверху-вниз по экрану
                 base.OnAppearing();
                 loaded = true;
@@ -67,7 +68,7 @@ namespace parusapp.Views
         {
             eventsList.IsRefreshing = true;
             await Task.Delay(1000);
-            eventsList.ItemsSource = App.Database.GetItems();
+            eventsList.ItemsSource = await App.Database.GetItems();
             eventsList.IsRefreshing = false;
         }
 

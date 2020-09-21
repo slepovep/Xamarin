@@ -42,9 +42,9 @@ namespace parusapp.ViewModels
 
             //var CommentsList = new ObservableCollection<Comment>(database.Table<Comment>().ToList());
             //var CommentsCollection = new ObservableCollection<Comment>();
-            foreach (var Comment in CommentsList) {
-                Messages.Insert(0, new Message() { Text = Comment.Comment_text, User = Comment.User, Reg_date = Comment.Reg_date.Value.ToString("dd.MM.yyyy HH:mm") });
-            }
+     //       foreach (var Comment in CommentsList) {
+     //           Messages.Insert(0, new Message() { Text = Comment.Comment_text, User = Comment.User, Reg_date = Comment.Reg_date.Value.ToString("dd.MM.yyyy HH:mm") });
+     //       }
 
             //Messages.Insert(0, new Message() { Text = Comment.Comment_text, User = Comment.User });
 

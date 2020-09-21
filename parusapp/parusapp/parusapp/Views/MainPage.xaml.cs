@@ -30,5 +30,11 @@ namespace parusapp.Views
                 IsPresented = false;
             }
         }
+        protected override async void OnAppearing()
+        {
+            // создание таблицы, если ее нет
+            await App.Database.CreateTable();
+            base.OnAppearing();
+        }
     }
 }
