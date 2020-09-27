@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="db\Events.db" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="db\Events.db" />
   </ItemGroup>
 

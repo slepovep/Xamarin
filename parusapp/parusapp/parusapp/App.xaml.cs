@@ -33,7 +33,7 @@ namespace parusapp
                         // получаем текущую сборку
                         var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
                         // берем из нее ресурс базы данных и создаем из него поток
-                        using (Stream stream = assembly.GetManifestResourceStream($"SQLiteApp.{DATABASE_NAME}")) {
+                        using (Stream stream = assembly.GetManifestResourceStream($"parusapp.{DATABASE_NAME}")) {
                             using (FileStream fs = new FileStream(dbPath, FileMode.OpenOrCreate)) {
                                 stream.CopyTo(fs);  // копируем файл базы данных в нужное нам место
                                 fs.Flush();
