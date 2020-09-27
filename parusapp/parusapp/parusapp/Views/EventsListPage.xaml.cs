@@ -20,11 +20,15 @@ namespace parusapp.Views
         }
         protected override void OnAppearing()
         {
-            //if (loaded == false) {
+            if (App.IsUserLoggedIn != true) {
+                Navigation.InsertPageBefore(new LoginPage(), this);
+                Navigation.PopAsync();
+            }
+            else {
                 eventsList.ItemsSource = App.Database.GetItems();
                 eventsList.PullToRefreshCommand = new Command(RefreshEventsList);  //обновление страницы жестом сверху-вниз по экрану
-                base.OnAppearing();
-                loaded = true;
+            }
+            base.OnAppearing();
 
                 //RefreshCommand = new Command(RefreshEventsList);
             

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:parusapp.MasterDetailPageNavigation"
+             xmlns:local="clr-namespace:parusapp.Models"
 			 xmlns:pages="clr-namespace:parusapp.Views"
 			 x:Class="parusapp.Views.MasterPage"
 			 Padding="0,40,0,0"
 			 IconImageSource="hamburger.png"
-			 Title="Personal Organiser">
+			 Title="Панель навигации">
     <StackLayout>
         <ListView x:Name="listView" x:FieldModifier="public">
            <ListView.ItemsSource>
 				<x:Array Type="{x:Type local:MasterPageItem}">
-					<local:MasterPageItem Title="Личный кабинет" IconSource="reminders.png" TargetType="{x:Type pages:ReminderPage}" />
+					<local:MasterPageItem Title="Личный кабинет" IconSource="contacts.png" TargetType="{x:Type pages:LoginPage}" />
 					<local:MasterPageItem Title="Журнал событий" IconSource="todo.png" TargetType="{x:Type pages:EventsListPage}" />
 					<local:MasterPageItem Title="Журнал обращений" IconSource="reminders.png" TargetType="{x:Type pages:ReminderPage}" />
 					<local:MasterPageItem Title="Новости" IconSource="contacts.png" TargetType="{x:Type pages:NewsPage}" />

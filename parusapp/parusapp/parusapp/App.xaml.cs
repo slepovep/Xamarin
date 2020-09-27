@@ -10,6 +10,7 @@ namespace parusapp
 {
 	public partial class App : Application
 	{
+        public static bool IsUserLoggedIn { get; set; }
         public static string User = "Rendy";
         public const string DATABASE_NAME = "Events.db";
         public static EventRepository database;
@@ -51,7 +52,7 @@ namespace parusapp
 			 InitializeComponent();
 			//DependencyService.Register<MockDataStore>();
 			MainPage = new MainPage();
-		}
+        }
 
 		protected override void OnStart()
 		{
