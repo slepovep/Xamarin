@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using parusapp.MasterDetailPageNavigation;
+using parusapp.Models;
 
 namespace parusapp.Views
 {

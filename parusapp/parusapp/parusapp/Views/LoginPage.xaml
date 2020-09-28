@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="parusapp.Views.LoginPage" Title="Регистрация">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions="Start"
+                 VerticalOptions="Center">
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+				<Label Text="Пользователь:" 
+                   FontSize="20"
+                   WidthRequest="150"
+                   HorizontalTextAlignment="End"
+                   TextColor="#000"
+                   VerticalOptions="Center"/>
+				<Entry x:Name="usernameEntry" 
+				   Placeholder="Введите логин" 
+                   FontSize="18"
+                   WidthRequest="240"
+                   VerticalOptions="Center"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+				<Label Text="Пароль:" 
+				   HorizontalTextAlignment="End"
+                   FontSize="20"
+			       WidthRequest="150"
+                   TextColor="#000"
+                   VerticalOptions="Center"/>
+				<Entry x:Name="passwordEntry" 
+				   Placeholder="Введите пароль" 	   
+				   IsPassword="true" 
+                   FontSize="18"
+                   WidthRequest="240"
+                   VerticalOptions="Center"/>
+			</StackLayout>
+
+			<Label x:Name="messageLabel"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   FontSize="15"
+                   FontAttributes="Italic" />
+			
+
+			<StackLayout HorizontalOptions="Center"
+                     Margin="0,10">
+				<Button Text="Вход"
+					Clicked="OnLoginButtonClicked"	
+                    BackgroundColor="#09C"
+                    TextColor="#FFF"
+                    WidthRequest="150"/>
+			</StackLayout>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

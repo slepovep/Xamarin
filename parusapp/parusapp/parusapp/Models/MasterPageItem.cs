@@ -1,10 +1,6 @@
 ﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using parusapp.Services;
-using parusapp.Views;
 
-namespace parusapp.MasterDetailPageNavigation
+namespace parusapp.Models
 {
 	public class MasterPageItem
 	{
