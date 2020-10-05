@@ -28,6 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\WebSvodPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\WebClientPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\ProfilePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -58,6 +64,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\WebSvodPage.xaml.cs">
+      <DependentUpon>WebSvodPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\WebClientPage.xaml.cs">
+      <DependentUpon>WebClientPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Compile>

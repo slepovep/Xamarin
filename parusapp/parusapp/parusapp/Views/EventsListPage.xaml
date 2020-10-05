@@ -35,7 +35,7 @@
 				</dg:DataGrid.RowsBackgroundColorPalette>
 			</dg:DataGrid>
 		</ContentView>
-		<Button Text="Добавить" Clicked="CreateEvent" VerticalOptions="End" />
-		<Button Text="Удалить" Clicked="DeleteEvent" VerticalOptions="End" />
+		<Button Text="Добавить" Clicked="CreateEvent" VerticalOptions="Fill" />
+		<Button Text="Удалить" Clicked="DeleteEvent" VerticalOptions="Fill" />
     </StackLayout>
 </ContentPage>  	
